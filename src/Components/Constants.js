@@ -1,1 +1,1 @@
-export const api = "http://66.220.198.144:4443/api/v1"
+export const api = "https://portfolio-api-hbb6pktpxa-uc.a.run.app/api/v1"
