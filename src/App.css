@@ -77,13 +77,31 @@ body {
 .nav-links a:hover {
   background-color: #3c3756;
 }
-/* 
-.content {
-  flex: 1;
-  padding: 20px;
-  height: 100vh; /* Make the content take the full height of the viewport 
-  overflow-y: auto; /* Add scroll if content is longer than the viewport 
-*/
+
+
+.external-links {
+  display: flex;
+  flex-direction: column; /* Display links in a column on small screens */
+}
+
+.external-links a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.icon {
+  width: 24px; /* Set the desired width for the icons */
+  height: 24px; /* Set the desired height for the icons */
+  margin-right: 10px;
+}
+
+.external-links a:hover {
+  background-color: #555;
+}
 
 
 .timeline {
@@ -115,18 +133,80 @@ body {
   margin-top: 10px;
 }
 
-.project-card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+header {
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
   padding: 20px;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease-in-out;
-  color: black;
 }
 
-.project-card:hover {
-  transform: scale(1.05);
+.project-carousel {
+  /* display: flex; */
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white;
+}
+
+.project-box {
+  background-color: #1b0238;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  width: 600px;
+}
+
+.project-box h3 {
+  margin-bottom: 10px;
+}
+
+.image-carousel {
+  display: flex;
+  justify-content: center;
+  /* justify-content: space-between; */
+  margin-bottom: 15px;
+}
+
+.image-carousel img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.project-box p {
+  text-align: center;
+}
+
+.arrow-buttons {
+  /* position: absolute; */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  margin: 60px 30px;
+  color: white;
+}
+
+.arrow-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: rgb(200, 200, 200);
+}
+
+.arrow-btn:hover {
+  color: #555;
 }
 
 .starry-night{

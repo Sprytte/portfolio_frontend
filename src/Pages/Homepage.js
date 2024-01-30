@@ -7,8 +7,8 @@ const HomePage = () => {
             <Sidebar />
 
             <div class="content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h1>Hi, I'm Émilie <br/>
+            Computer Science Student</h1>
             </div>
         </div>
 
