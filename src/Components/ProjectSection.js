@@ -25,7 +25,9 @@ const ProjectSection = ({ title, projects }) => {
             <ArrowButtons onClick={() => changeProject(1, project.images.length)} direction="next"/>
           </div>
           <p>{project.description}</p>
-          <p>{project.technologies}</p>
+          <p>{project.technologies.map((tech) => (
+            <span className="technology-span">{tech}</span>
+          ))}</p>
         </div>
       ))}
     </div>

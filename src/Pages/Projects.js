@@ -24,7 +24,6 @@ import { api } from '../Components/Constants';
 // };
 
 const Projects = () => {
-    const [currentProject, setCurrentProject] = useState(1);
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
@@ -34,9 +33,6 @@ const Projects = () => {
         .catch((error) => console.error('Error fetching projects:', error));
     }, []);
 
-    const changeProject = (n) => {
-        setCurrentProject((prev) => (prev + n > 0 && prev + n <= 2) ? prev + n : prev);
-    };
     return(
     <div>
         <div class="container">

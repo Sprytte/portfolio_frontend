@@ -161,7 +161,7 @@ header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
   text-align: center;
-  width: 600px;
+  width: 560px;
 }
 
 .project-box h3 {
@@ -184,6 +184,13 @@ header {
 
 .project-box p {
   text-align: center;
+}
+
+.technology-span{
+  background-color: #3c3756;
+  margin: 5px 10px;
+  padding: 6px;
+  border-radius: 6px;
 }
 
 .arrow-buttons {
