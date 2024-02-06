@@ -9,6 +9,8 @@ const HomePage = () => {
             <div class="content">
             <h1>Hi, I'm Émilie <br/>
             Computer Science Student</h1>
+
+            <p>[Planets leading to the different pages]</p>
             </div>
         </div>
 
