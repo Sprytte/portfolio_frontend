@@ -1,7 +1,35 @@
 import Sidebar from "../Components/Sidebar";
 import pfp from "../Images/Pfp.jpg"
+import pdf from "../Images/EmilieParent_CV.pdf"
 
 const About = () => {
+    // const downloadPDF = () => {
+    //     const pdfUrl = "../Images/EmilieParent_CV.pdf";
+    //     const link = document.createElement("a");
+    //     link.href = pdfUrl;
+    //     link.download = "EmilieParent_CV.pdf"; // specify the filename
+    //     document.body.appendChild(link);
+    //     link.click();
+    //     document.body.removeChild(link);
+    // };
+    const downloadPDF = () => {
+     
+        // using Java Script method to get PDF file
+        fetch("../Images/EmilieParent_CV.pdf").then((response) => {
+            response.blob().then((blob) => {
+             
+                // Creating new object of PDF file
+                const fileURL =
+                    window.URL.createObjectURL(blob);
+                     
+                // Setting various property values
+                let alink = document.createElement("a");
+                alink.href = fileURL;
+                alink.download = "SamplePDF.pdf";
+                alink.click();
+            });
+        });
+    };
     return(
     <div>
         <div class="container">
@@ -48,7 +76,7 @@ const About = () => {
 
                 <section>
                     <h2>Download CV</h2>
-                    <p>Interested in learning more about my academic and professional journey? Download my CV <a href="[LinkToYourCVFile]" download>here</a>.</p>
+                    <p>Interested in learning more about my academic and professional journey? View my CV <a href={pdf}>here</a>.</p>
                 </section>
             </div>
         </div>
