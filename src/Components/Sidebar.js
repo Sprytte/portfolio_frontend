@@ -16,6 +16,8 @@ const Sidebar = () => {
                             <hr/>
                             <a href="/projects">Projects</a>
                             <hr/>
+                            <a href="/interests">Interests</a>
+                            <hr/>
                         </div>
 
                         <div class="external-links">

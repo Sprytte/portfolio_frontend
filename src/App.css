@@ -87,6 +87,7 @@ hr {
 .container {
   display: flex;
   min-height: 100vh;
+  /* margin-left: 15%; */
 }
 
 .sidebar {
@@ -99,8 +100,8 @@ hr {
   /* margin-right: 20px; */
   margin: 15px 35px 15px 25px;
   border-radius: 6px;
+  /* position: fixed; */
 }
-
 
 .sidebar-container {
   margin-top: 20px;
@@ -260,7 +261,7 @@ hr {
 .arrow-buttons {
   /* position: absolute; */
   top: 50%;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
   width: 100%;
   /* display: flex; */
   /* justify-content: space-between; */
