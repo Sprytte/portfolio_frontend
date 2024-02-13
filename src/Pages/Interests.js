@@ -59,7 +59,7 @@ const Interests = () => {
                     </Carousel>
                 </div>
                     <div className={`project-section`}>
-                        <h2>Movies</h2>
+                        <h2>Movies / TV Shows</h2>
                         <Carousel className="project-box"  style={{display:"flex", justifyContent:"center"}}>
                             {movies.map((movie, index) => (
                                 <div>
