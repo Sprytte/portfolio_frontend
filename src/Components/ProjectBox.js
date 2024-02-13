@@ -19,7 +19,7 @@ const ProjectBox = ({ project }) => {
             ))} */}
             {/* Map through the images like above. Use imageIndex. Instead of calling function, do the math directly in image source.
             Current imageindex should be displayed, others display: none */}
-            <img src={project.images[currentProject]} alt={`Project ${project.name} Image ${currentProject + 1}`} width={220} height={150}/>
+            <img src={project.images[currentProject]} alt={`Project ${project.name} Image ${currentProject + 1}`} width={310} height={310}/>
             <ArrowButtons onClick={() => changeProject(1, project.images.length)} direction="next"/>
           </div>
           <p>{project.description}</p>

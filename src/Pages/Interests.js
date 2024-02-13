@@ -53,7 +53,7 @@ const Interests = () => {
                                 <iframe style={{borderRadius:"12px"}} src={song.link}
                                     width="50%" height="260" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                                     loading="lazy"></iframe>
-                                <p className="legend">Rating: {song.rating} / 10</p>
+                                <p className="legend">Personal Rating: {song.rating} / 10</p>
                             </div>
                         ))}
                     </Carousel>
@@ -67,7 +67,7 @@ const Interests = () => {
                                     <img src={movie.image} alt={`Movie/Show ${movie.title} Image`} width={"40%"} height={"50%"}/>
                                     {/* <p className="legend">Rating: {song.rating} / 10</p> */}
                                     <p>{movie.summary}</p>
-                                    <p>Rating: {movie.rating}</p>
+                                    <p>Personal Rating: {movie.rating}</p>
                                     <p>Obsession level: {movie.obsession} / 10</p>
                                 </div>
                             ))}
@@ -83,7 +83,7 @@ const Interests = () => {
                                     {/* <p className="legend">Rating: {song.rating} / 10</p> */}
                                     <p>Author: {book.author}</p>
                                     <p>{book.summary}</p>
-                                    <p>Rating: {book.rating} / 10</p>
+                                    <p>Personal Rating: {book.rating} / 10</p>
                                 </div>
                             ))}
                         </Carousel>

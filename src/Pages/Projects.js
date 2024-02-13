@@ -5,12 +5,18 @@ import ProjectSection from '../Components/ProjectSection';
 import { api } from '../Components/Constants';
 
 const Projects = () => {
-    const [projects, setProjects] = useState([]);
-
+    const [schoolProjects, setSchoolProjects] = useState([]);
     useEffect(() => {
-      fetch(`${api}/projects`)
+      fetch(`${api}/projects/school`)
         .then((response) => response.json())
-        .then((data) => setProjects(data))
+        .then((data) => setSchoolProjects(data))
+        .catch((error) => console.error('Error fetching projects:', error));
+    }, []);
+    const [personalProjects, setPersonalProjects] = useState([]);
+    useEffect(() => {
+      fetch(`${api}/projects/personal`)
+        .then((response) => response.json())
+        .then((data) => setPersonalProjects(data))
         .catch((error) => console.error('Error fetching projects:', error));
     }, []);
 
@@ -23,8 +29,8 @@ const Projects = () => {
 
             <div className="projects-container">
                 <div className="project-carousel">
-                    <ProjectSection title="School Projects" projects={projects} />
-                    {/* <ProjectSection title="Personal Projects" projects={projectsData.personalProjects} /> */}
+                    <ProjectSection title="School Projects" projects={schoolProjects} />
+                    <ProjectSection title="Personal Projects" projects={personalProjects} />
                 </div>
             </div>
         </div>

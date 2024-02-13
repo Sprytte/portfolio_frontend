@@ -52,7 +52,7 @@ const About = () => {
                     <h2>Skills</h2>
                     <ul>
                         <li><strong>Programming Languages:</strong> Java, C#, Python, Swift, Javascript, HTML/CSS</li>
-                        <li><strong>Technologies:</strong> Sprintboot, ReactJS, IntelliJ, Jira, Github, Docker</li>
+                        <li><strong>Technologies:</strong> Springboot, ReactJS, IntelliJ, Jira, Github, Docker</li>
                     </ul>
                 </section>
 
