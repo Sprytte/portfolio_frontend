@@ -22,10 +22,10 @@ const Sidebar = () => {
 
                         <div class="external-links">
                             <a href="https://github.com/Sprytte" target="_blank">
-                                <img src={github} alt="GitHub Icon" class="icon" />
+                                <img src={github} alt="GitHub Icon" class="icon" /> Github
                             </a>
                             <a href="www.linkedin.com/in/emilie-parent-486305293" target="_blank">
-                                <img src={linkedin} alt="LinkedIn Icon" class="icon" />
+                                <img src={linkedin} alt="LinkedIn Icon" class="icon" /> LinkedIn
                             </a>
                         </div>
                     </nav>
