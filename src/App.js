@@ -6,6 +6,7 @@ import Cards from './Pages/cards';
 import About from './Pages/About';
 import Projects from './Pages/Projects';
 import Experience from './Pages/Experience';
+import Interests from './Pages/Interests';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/about" element={<About />} />
+          <Route path="/interests" element={<Interests />} />
         </Routes>
       </div>
     </BrowserRouter>

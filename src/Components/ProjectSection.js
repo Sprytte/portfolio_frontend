@@ -5,10 +5,6 @@ import ProjectBox from './ProjectBox';
 const ProjectSection = ({ title, projects }) => {
     const [currentProject, setCurrentProject] = useState(0);
 
-    const changeProject = (n, total) => {
-        setCurrentProject((currentProject + n >= 0 && currentProject + n < total) ? currentProject + n : currentProject);
-    };
-
   return (
     <div className={`project-section`}>
       <h2>{title}</h2>
