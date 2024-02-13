@@ -14,12 +14,7 @@ const ProjectBox = ({ project }) => {
           <h3>{project.name}</h3>
           <div className="image-carousel">  
             <ArrowButtons onClick={() => changeProject(-1, project.images.length)} direction="prev"/>
-            {/* {project.images.map((image, imageIndex) => (
-              <img key={imageIndex} src={image} alt={`Project ${index + 1} Image ${imageIndex + 1}`} width={200} height={150}/>
-            ))} */}
-            {/* Map through the images like above. Use imageIndex. Instead of calling function, do the math directly in image source.
-            Current imageindex should be displayed, others display: none */}
-            <img src={project.images[currentProject]} alt={`Project ${project.name} Image ${currentProject + 1}`} width={310} height={310}/>
+            <img src={project.images[currentProject]} alt={`Project ${project.name} Image ${currentProject + 1}`} width={260} height={310}/>
             <ArrowButtons onClick={() => changeProject(1, project.images.length)} direction="next"/>
           </div>
           <p>{project.description}</p>

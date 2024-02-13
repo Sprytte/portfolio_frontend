@@ -218,7 +218,7 @@ hr {
   color: white;
 }
 
-.project-box {
+/* .project-box {
   background-color: #1b0238;
   padding: 20px;
   margin: 20px 0;
@@ -236,7 +236,7 @@ hr {
 .image-carousel {
   display: flex;
   justify-content: center;
-  /* justify-content: space-between; */
+  /* justify-content: space-between; 
   margin-bottom: 15px;
 }
 
@@ -249,6 +249,43 @@ hr {
 
 .project-box p {
   text-align: center;
+} */
+
+.project-box {
+  background-color: #1b0238;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  width: 100%; /* Adjusted width for responsiveness */
+}
+
+.image-carousel {
+  display: flex;
+  flex-direction: column; /* Display images in a column on small screens */
+  align-items: center; /* Center images horizontally */
+  margin-bottom: 15px;
+}
+
+.image-carousel img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px; /* Add some space between images on small screens */
+}
+
+@media (min-width: 600px) {
+  .project-box {
+    width: 560px; /* Set the width back to the original size for larger screens */
+  }
+
+  .image-carousel {
+    flex-direction: row; /* Display images in a row on larger screens */
+    justify-content: space-between; /* Add space between images on larger screens */
+  }
 }
 
 .technology-span{
