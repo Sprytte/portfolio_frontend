@@ -1,6 +1,7 @@
 import Sidebar from "../Components/Sidebar";
 import pfp from "../Images/Pfp.jpg"
-import pdf from "../Images/EmilieParent_CV.pdf"
+import french from "../Images/EmilieParent_CV_Francais.pdf"
+import english from "../Images/EmilieParent_CV_English.pdf"
 
 const About = () => {
     // const downloadPDF = () => {
@@ -76,7 +77,10 @@ const About = () => {
 
                 <section>
                     <h2>Download CV</h2>
-                    <p>Interested in learning more about my academic and professional journey? View my CV <a href={pdf}>here</a>.</p>
+                    <p>Interested in learning more about my academic and professional journey? View my CV below.</p>
+                    <p><a href={french}>Français</a></p>
+                    <p><a href={english}>English</a></p>
+
                 </section>
             </div>
         </div>

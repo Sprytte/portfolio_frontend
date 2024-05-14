@@ -18,6 +18,7 @@ const ProjectBox = ({ project }) => {
             <ArrowButtons onClick={() => changeProject(1, project.images.length)} direction="next"/>
           </div>
           <p>{project.description}</p>
+          {project.github && <a href={project.github}>Github</a>}
           <p>{project.technologies.map((tech) => (
             <span className="technology-span">{tech}</span>
           ))}</p>

@@ -9,7 +9,23 @@ const Experience = () => {
             <div class="content">
                 <h1>Experience</h1>
                 
-                    <section>
+                <section>
+                    <h2>Work Experience</h2>
+                    <div class="school-info">
+                        <p><strong>Generix Group - Java developer</strong> <br/>
+                        Internship</p>
+                        <p>March 2024 - May 2024</p>
+                        <ul class="class-list">
+                            <ul>
+                                <li>- Participate in the investigation and resolution of bugs</li>
+                                <li>- Analyze and implement new features for Solochain</li>
+                                <li>- Define and automate positive and negative tests with the QA team</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
                     <h2>School Experience</h2>
                     <div class="school-info">
                         <p><strong>Champlain College - Saint-Lambert <br/>
@@ -38,14 +54,6 @@ const Experience = () => {
                     </ul>
                 </section>
 
-                <section>
-                    <h2>Work Experience</h2>
-                    <div class="school-info">
-                        <p><strong>Generix - Java developer</strong> <br/>
-                        Internship</p>
-                        <p>March 2024 - June 2024</p>
-                    </div>
-                </section>
             </div>
         </div>
 
