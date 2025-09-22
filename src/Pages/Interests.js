@@ -7,6 +7,7 @@ import ArrowButtons from "../Components/ArrowButton";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import MovieBox from "../Components/MovieBox";
+import {Songs, Movies, Books} from '../data/interests_data';
 
 const Interests = () => {
     const [songs, setSongs] = useState([])
@@ -14,22 +15,13 @@ const Interests = () => {
     const [books, setBooks] = useState([])
 
     useEffect(() => {
-        fetch(`${api}/songs`)
-          .then((response) => response.json())
-          .then((data) => setSongs(data))
-          .catch((error) => console.error('Error fetching songs:', error));
+        setSongs(Songs)
       }, []);
       useEffect(() => {
-        fetch(`${api}/books`)
-          .then((response) => response.json())
-          .then((data) => setBooks(data))
-          .catch((error) => console.error('Error fetching songs:', error));
+        setMovies(Movies)
       }, []);
       useEffect(() => {
-        fetch(`${api}/movies`)
-          .then((response) => response.json())
-          .then((data) => setMovies(data))
-          .catch((error) => console.error('Error fetching songs:', error));
+        setBooks(Books)
       }, []);
 
       const [activeIndex, setActiveIndex] = useState(0);

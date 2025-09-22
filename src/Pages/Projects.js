@@ -2,22 +2,16 @@ import React, { useState, useEffect } from 'react';
 import Sidebar from "../Components/Sidebar";
 import ProjectSection from '../Components/ProjectSection';
 // import ArrowButtons from '../Components/ArrowButton';
-import { api } from '../Components/Constants';
+import {AcademicProjects, PersonalProjects} from '../data/projects_data';
 
 const Projects = () => {
     const [schoolProjects, setSchoolProjects] = useState([]);
     useEffect(() => {
-      fetch(`${api}/projects/school`)
-        .then((response) => response.json())
-        .then((data) => setSchoolProjects(data))
-        .catch((error) => console.error('Error fetching projects:', error));
+            setSchoolProjects(AcademicProjects)
     }, []);
     const [personalProjects, setPersonalProjects] = useState([]);
     useEffect(() => {
-      fetch(`${api}/projects/personal`)
-        .then((response) => response.json())
-        .then((data) => setPersonalProjects(data))
-        .catch((error) => console.error('Error fetching projects:', error));
+      {setPersonalProjects(PersonalProjects)}
     }, []);
 
     return(
