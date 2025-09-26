@@ -19,7 +19,7 @@ const HomePage = () => {
 
             <div class="content">
             <h1>Hi, I'm Émilie <br/>
-            Computer Science Student</h1>
+            Software Engineering Student</h1>
 
                 <div className="planet-links">
                     <PlanetLink
