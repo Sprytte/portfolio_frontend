@@ -4,15 +4,6 @@ import french from "../Images/EmilieParent_CV_Francais.pdf"
 import english from "../Images/EmilieParent_CV_English.pdf"
 
 const About = () => {
-    // const downloadPDF = () => {
-    //     const pdfUrl = "../Images/EmilieParent_CV.pdf";
-    //     const link = document.createElement("a");
-    //     link.href = pdfUrl;
-    //     link.download = "EmilieParent_CV.pdf"; // specify the filename
-    //     document.body.appendChild(link);
-    //     link.click();
-    //     document.body.removeChild(link);
-    // };
     const downloadPDF = () => {
      
         // using Java Script method to get PDF file
@@ -40,20 +31,21 @@ const About = () => {
             <header>
                 <img src={pfp} alt="em. p."/>
                 <h1>Émilie Parent</h1> 
-                <p>Computer Science Student</p>
+                <p>Software Engineering (co-op) Student</p>
             </header>
                 <section>
                     <h2>About Me</h2>
-                    <p>                        My journey in computer science began with a curiosity to 
-                        understand how things work in the digital realm. I thrive in challenging environments that require me to 
+                    <p> My journey in computer science began with a curiosity to 
+                        understand how things work in the digital realm. Later, it continued with a thirst for knowledge and problems to solve as I continued forward and into university. 
+                        I thrive in challenging environments that require me to 
                         think critically and creatively.</p>
                 </section>
 
                 <section>
                     <h2>Skills</h2>
                     <ul>
-                        <li><strong>Programming Languages:</strong> Java, C#, Python, Swift, Javascript, HTML/CSS</li>
-                        <li><strong>Technologies:</strong> Springboot, ReactJS, IntelliJ, Jira, Github, Docker</li>
+                        <li><strong>Programming Languages:</strong> Java, C#, Python, Swift, Javascript, HTML/CSS, ReactJS, PHP, Kotlin, Django, C, C++</li>
+                        <li><strong>Technologies:</strong> Springboot, ReactJS, IntelliJ, Jira, Github, Docker, Figma, Visual Studio (Code), Postman, Eclipse</li>
                     </ul>
                 </section>
 

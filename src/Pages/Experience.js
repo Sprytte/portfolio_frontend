@@ -13,8 +13,9 @@ const Experience = () => {
                     <h2>Work Experience</h2>
                     <div class="school-info">
                         <p><strong>Generix Group - Java developer</strong> <br/>
-                        Internship</p>
-                        <p>March 2024 - May 2024</p>
+                        Internship/Full-time Employee</p>
+                        <p>March 2024 - May 2024 (internship) <br></br>
+                        May 2024 - August 2024 (Employee)</p>
                         <ul class="class-list">
                             <ul>
                                 <li>- Participate in the investigation and resolution of bugs</li>
@@ -27,6 +28,24 @@ const Experience = () => {
 
                 <section>
                     <h2>School Experience</h2>
+                    <div class="school-info">
+                        <p><strong>Concordia University - Montreal<br/>
+                        Software Engineering (co-op)</strong></p>
+                        <p>2024 - 2028</p>
+                    </div>
+                    <ul class="class-list">
+                        <li><strong>Classes Attended:</strong></li>
+                        <ul>
+                            <li><strong>Data Structures and Algorithms - Winter 2025</strong> <br/>
+                                Learning the basics of how to optomize and write efficient code.
+                            </li> <br/>
+                            <li><strong>Fundamentals of Programming Languages - Winter 2025</strong><br/>
+                                Learning the foundations of programming languages as well as the basics of various different
+                                types of languages such as C, Python, Erlang, and Clojure.
+                            </li> <br/>
+                        </ul>
+                    </ul>
+                    <br></br>
                     <div class="school-info">
                         <p><strong>Champlain College - Saint-Lambert <br/>
                         Computer Sciences</strong></p>
